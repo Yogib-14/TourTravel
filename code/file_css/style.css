@@ -1,0 +1,218 @@
+body{
+    width: 960px;
+    background: #F0EFE2 url(background.png) repeat;
+    color: #777;
+    margin: center;
+
+}
+
+
+#bungkus{
+    display: grid;
+	grid-template-columns: repeat(3.auto);
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:
+	  "atas atas atas atas atas"
+    "tengah tengah tengah tengah kanan"
+    "bawah bawah bawah bawah bawah"
+}
+
+#atas{
+    grid-area: atas;
+    background-image: url("bg-atas.jpg");
+    margin-left:30px;
+    margin-right: 30px;
+
+}
+
+
+#logo {
+    margin-left: 30px;
+}
+
+#logo img{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+#menubar
+{ width: 851.5px;
+  height: 72px;
+  padding:0;
+  margin-left: 250px;
+  margin-right: 250px;
+  background: transparent url(transparent_light.png) repeat;} 
+
+
+ul#menu, ul#menu li
+{ float: left;
+    margin: 0; 
+  padding: 0;
+  
+}
+
+ul#menu li
+{ list-style: none;
+}
+
+ul#menu li a
+{ letter-spacing: 0.1em;
+  font: normal 100% arial, sans-serif;
+  display: block; 
+   
+  height: 37px;
+  padding: 29px 26px 6px 26px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;} 
+
+ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
+{ color: #FFF;
+  background: transparent url(transparent.png) repeat;}
+
+
+
+#tengah{
+    grid-area: tengah;
+    margin-right: 10px;
+}
+#tengah #konten p{
+  font: normal 120% arial, sans-serif;
+  margin-right: 30px;
+
+}
+
+#tengah {
+  padding: 15px 0;
+  margin-left: 90px;
+  margin-top: 40px;
+}
+
+table td{
+  margin:auto;
+  text-align: center;
+  width : 400px;
+
+}
+
+table img {vertical-align: middle;
+  display: block;
+text-align: center;
+margin-left: auto;
+margin-right: auto;}
+
+#row{
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+#gambar_tengah {
+  padding: 10px 0;
+}
+
+.icon img{
+  width: 200px;
+  height: 200px;
+}
+#gambar_tengah .box{
+  width: 280px;
+  height: 300px;
+  display: inline-block;
+  margin: 5px 8px;
+  border : solid black 1px;
+}
+
+.gambar_tengah .title{
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+
+
+#kanan{
+    grid-area: kanan;
+    border : solid black 1px;
+    margin-top: 40px;
+    margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width:180px;
+    height: 270px;  
+}
+
+#bawah{
+    grid-area: bawah;
+    border:1px solid black;
+    background-color: red;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+
+
+
+
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin-left: 85px;
+  margin-right: 400px;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.titik{
+  margin-left: 448px;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
